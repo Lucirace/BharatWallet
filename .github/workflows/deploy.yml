@@ -40,4 +40,4 @@ jobs:
             sudo docker rm web-app || true
             sudo docker run -d --name web-app -p 3005:3000 lucirace/bharat_wallet_user:latest
 
-#Replace with your Docker Hub username and repository
+#Note: Replace with your Docker Hub username and repository 
