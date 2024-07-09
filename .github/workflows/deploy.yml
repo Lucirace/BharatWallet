@@ -27,7 +27,7 @@ jobs:
           tags: lucirace/bharat_wallet_user:latest # Replace with your Docker Hub username and repository
 
       - name: Verify Pushed Image
-        run: docker pull lucirace/bharat_wallet_user:latest # Replace with your Docker Hub username and repository
+        run: docker pull lucirace/bharat_wallet_user:latest # Replace with your Docker Hub username and repo
       - name: Deploy to EC2
         uses: appleboy/ssh-action@master
         with:
