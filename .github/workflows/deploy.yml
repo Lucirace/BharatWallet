@@ -39,6 +39,6 @@ jobs:
             sudo docker images
             sudo docker stop web-app || true
             sudo docker rm web-app || true
-            sudo docker run -d --name web-app -p 3005:3000 -e DATABASE_URL="${{secrets.DATABASE_URL}}" -e NEXTAUTH_URL="${{secrets.NEXTAUTH_URL}}" -e JWT_SECRET="${{secrets.JWT_SECRET}}" lucirace/bharat_wallet_user:latest
+            sudo docker run -p 3005:3000 --name web-app -d -e DATABASE_URL="${{secrets.DATABASE_URL}}" -e NEXTAUTH_URL="${{secrets.NEXTAUTH_URL}}" -e JWT_SECRET="${{secrets.JWT_SECRET}}" lucirace/bharat_wallet_user:latest
 
 
