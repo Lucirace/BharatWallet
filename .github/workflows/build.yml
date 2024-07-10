@@ -5,9 +5,13 @@ on:
     branches:
       - master
 
+env:
+  PRISMA_SCHEMA_DISABLE_ADVISORY_LOCK: "true"
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js
@@ -20,8 +24,6 @@ jobs:
 
       - name: Generate prisma client
         run: npm run db:generate
-        env:
-         PRISMA_SCHEMA_DISABLE_ADVISORY_LOCK: true
 
       - name: Run Build
         run: npm run build
