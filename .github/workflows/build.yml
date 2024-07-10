@@ -19,6 +19,8 @@ jobs:
         run: npm install
 
       - name: Generate prisma client
+        env:
+         PRISMA_SCHEMA_DISABLE_ADVISORY_LOCK: "true"
         run: npm run db:generate & db:migrate
      
 
