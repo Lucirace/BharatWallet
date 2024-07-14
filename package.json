@@ -3,12 +3,14 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
+    "build-bank-webhook": "turbo build --filter=bank-webhook",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "db:generate": "cd packages/db && npx prisma generate && cd ../..",
     "db:migrate": "cd packages/db && npx prisma migrate dev && cd ../..",
-    "start-user-app": "cd ./apps/user-app && npm run start"
+    "start-user-app": "cd ./apps/user-app && npm run start",
+    "start-bank-webhook": "cd ./apps/bank-webhook && npm run start"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
