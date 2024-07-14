@@ -61,7 +61,7 @@ export const authOptions = {
       },
     }),
   ],
-  secret: process.env.NEXTAUTH_SECRET || "secret",
+//  secret: process.env.NEXTAUTH_SECRET || "secret",
   callbacks: {
     // TODO: can u fix the type here? Using any is bad
     async session({ token, session }: any) {
@@ -69,5 +69,9 @@ export const authOptions = {
 
       return session;
     },
+     async redirect({ url, baseUrl }: any) {
+      return baseUrl;
+     },
   },
+  secret: process.env.NEXTAUTH_SECRECT || "secret",
 };
