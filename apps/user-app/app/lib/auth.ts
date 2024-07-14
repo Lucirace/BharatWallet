@@ -71,9 +71,7 @@ export const authOptions = {
   
    
      },
-     redirect: async ({ url, baseUrl }: any) => {
-      return Promise.resolve(url);
-    },
+    
   },
  
 };
