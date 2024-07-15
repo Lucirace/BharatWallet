@@ -30,7 +30,7 @@ jobs:
           tags: lucirace/user_wallet:latest # Replace with your Docker Hub username and repository
 
       - name: Verify Pushed Image
-        run: docker pull lucirace/user_wallet:latest # Replace with your Docker Hub username and repo
+        run: docker pull lucirace/user_wallet:latest # Replace with your Docker Hub username and repository 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@master
         with:
