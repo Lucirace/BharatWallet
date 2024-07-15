@@ -33,7 +33,7 @@ const MainContent = () => {
               Welcome to Bharat Wallet!!{" "}
             </h1>
             <h2 className="b-1 text-2xl font-bold tracking-tight leading-none text-black md:text-3xl lg:text-4xl mb-4">
-              We invest in the world’s potential
+              We always invest in the world’s potential
             </h2>
             <p className="mb-8 text-lg from-neutral-950 text-black-300 lg:text-xl sm:px-16 lg:px-48">
               Your all-in-one solution for managing finances on the go. Whether
