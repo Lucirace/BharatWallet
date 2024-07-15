@@ -30,7 +30,7 @@ const MainContent = () => {
         <section className="bg-cover bg-no-repeat rounded-xl opacity-70 bg-gray-200 bg-blend-multiply">
           <div className="px-4 mx-auto my-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900   md:text-5xl lg:text-6xl ">
-              Welcome to Bharat Wallet{" "}
+              Welcome to Bharat Wallet!!{" "}
             </h1>
             <h2 className="b-1 text-2xl font-bold tracking-tight leading-none text-black md:text-3xl lg:text-4xl mb-4">
               We invest in the world’s potential
